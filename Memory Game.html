@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Memory Game.css">
+</head>
+<body>
+     <!--start container page-->
+
+    <div class="container">
+        <!--start header-->
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+        <!--end header-->
+        <!--start section-->
+        <section class="stars">
+            <ul class="stars1">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="move">0</span> Move
+
+            <div class="time"></div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+            
+        </section>
+         <!--end section-->
+         
+         <!--start ul-->     
+        <ul class="cards" id="cardjs">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card match" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" type="bicycle" >
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card match" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card open show" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>   
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>  
+        </ul>
+           <!--end ul-->
+            <!--stat Congratulations-->
+        <div id="Congratulations" class="Congratulations">
+            <div class="popup">
+                <h2>Congratulations</h2>
+                <a class="close" href=# >×</a>
+                <div class="content1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again" onclick=playAgain()>
+                    Play again 😄
+                </button>
+            </div>
+        </div>
+        <!--end Congratulations-->
+
+    </div>
+   
+    <!--end container page-->
+
+    <script src="js/Memory Game.js"></script>
+</body>
+</html>
